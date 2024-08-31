@@ -1,0 +1,17 @@
+parameters:
+    level: max
+    paths:
+        - app/Services
+        - app/DTOs
+    excludePaths:
+        - */vendor/*
+        - */storage/*
+        - */app/Repositories/*
+    ignoreErrors:
+        - '#Call to an undefined method#'
+        - '#Unknown class#'
+        - '#Unsafe usage of new static#'
+        - '#Cannot call method toArray\(\) on mixed#'
+    reportUnmatchedIgnoredErrors: false
+    inferPrivatePropertyTypeFromConstructor: true
+    checkMissingIterableValueType: false
